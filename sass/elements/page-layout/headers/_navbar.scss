@@ -1,0 +1,116 @@
+nav.template-main-menu {
+    font-family: $font_heading;
+    >ul {
+        display: flex;
+        justify-content: center;
+        >li {
+            position: relative;
+            >a {
+                color: $color_dark;
+                padding: rem(50px 20px);
+                font-size: rem(16px);
+                font-weight: 500;
+                line-height: 1;
+                display: block;
+                position: relative;
+                z-index: 1;
+                transition: all 0.5s ease-out;
+                &::before {
+                    position: absolute;
+                    z-index: 1;
+                    content: "";
+                    height: rem(2px);
+                    width: 0%;
+                    left: 0;
+                    background-color: #000;
+                    right: 0;
+                    margin: 0 auto;
+                    bottom: 26px;
+                    transition: all 0.5s ease-out;
+                }
+                &:hover {
+                    &::before {
+                        width: 50%;
+                    }
+                }
+            }
+            ul.dropdown-menu-col {
+                padding: rem(20px 0px);
+                opacity: 0;
+                visibility: hidden;
+                position: absolute;
+                background-color: #ffffff;
+                z-index: 0;
+                top: 100%;
+                left: 0;
+				transform: translateY(rem(-15px));
+				border-radius: rem(4px);
+                width: rem(265px);
+                box-shadow: rem(0 0 35px 0) rgba(0, 0, 0, 0.10);
+				transition: all 0.3s ease-in-out;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 98%;
+                    height: rem(1px);
+                    bottom:0;
+                    margin: 0 auto;
+                    left: 0;
+                    right: 0;
+                    z-index: 1;
+                    border-radius: rem(4px);
+                    background-color: $color_primary;
+                }
+                li {
+                    a {
+                        padding: rem(5px 30px);
+                        font-weight: 500;
+                        width: 100%;
+                        font-size: rem(14px);
+                        color: #4c4b4b;
+                        display: inline-block;
+                        transition: all 0.5s ease-in-out;
+                        &:hover {
+                            color: $color_primary;
+                            span:before {
+                                width: 100%;
+                                left: 0;
+                                right: inherit;
+                            }
+                        }
+                        span {
+                            position: relative;
+                            z-index: 1;
+                            &::before {
+                                position: absolute;
+                                z-index: 1;
+                                content: "";
+                                background-color: $color_primary;
+                                height: rem(1px);
+                                width: 0;
+                                right: 0;
+                                left: inherit;
+                                bottom: 0;
+                                transition: all 0.7s cubic-bezier(.645,.045,.355,1);
+                            }
+                        }
+                    }
+                }
+            }
+            &:hover {
+                ul.dropdown-menu-col {
+                    z-index: 999;
+                    transform: translateY(0);
+                    opacity: 1;
+                    visibility: visible;
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+        }
+    }
+}
+
+.form-check-input {
+    left: -10px;
+    bottom: 9px;
+}

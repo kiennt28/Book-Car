@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="dependencies/fontawesome/css/all.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="dependencies/bootstrap/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/app.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="wrapper" class="wrapper">
+      <!-- <a href="#" class="return-to-top">
+        <i class="fas fa-angle-double-up"></i>
+      </a> -->
+      <div id="main_content">
+        <header class="sticky-on">
+          <div id="topbar-wrap">
+            <div class="topbar-layout">
+              <div class="container">
+                <div class="row no-gutters d-flex align-items-center">
+                  <div class="col-lg-6 d-flex justify-content-start">
+                    <ul class="topbar-menu">
+                      <li>Dịch vụ đặt xe</li>
+                      <li><i class="fas fa-phone"></i>Hotline: 0969.666.999</li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-6 d-flex justify-content-end">
+                    <ul class="topbar-social">
+                      <li class="single-item">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      </li>
+                      <li class="single-item">
+                        <a href="#"><i class="fab fa-line"></i></a>
+                      </li>
+                      <li class="single-item">
+                        <a href="#"
+                          ><i class="fab fa-facebook-messenger"></i
+                        ></a>
+                      </li>
+                      <li class="single-item">
+                        <a href="#"><i class="fab fa-viber"></i></a>
+                      </li>
+                      <li class="single-item">
+                        <a href="#"><i class="fab fa-whatsapp-square"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="navbar-wrap" class="navbar-wrap">
+            <div class="navbar-layout">
+              <div class="container">
+                <div class="row no-gutters d-flex align-items-center">
+                  <div class="col-lg-4 d-flex justify-content-start">
+                    <div class="temp-logo text-center">
+                      <a href="index.html" class="default-logo"
+                        ><img src="media/logo-default.png" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-8 d-flex justify-content-end">
+                    <nav class="template-main-menu">
+                      <ul>
+                        <li>
+                          <a href="#">Trang chủ</a>
+                        </li>
+                        <li>
+                          <a href="#">Dịch vụ</a>
+                          <ul id="dropdown" class="dropdown-menu-col">
+                            <li>
+                              <a href="#"><span>Test 1</span></a>
+                            </li>
+                            <li>
+                              <a href="#"><span>Test 2</span></a>
+                            </li>
+                            <li>
+                              <a href="#"><span>Test 3</span></a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#">Tin tức</a>
+                        </li>
+                        <li>
+                          <a href="#">Giới thiệu</a>
+                        </li>
+                        <li>
+                          <a href="#">Liên hệ</a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <!-- <div class="col-lg-3">
+                    <ul class="header-action-items">
+                      <li class="single-item">
+                        <a href="#" class="header-search">
+                          <i class="fas fa-search"></i>
+                        </a>
+                      </li>
+                      <li class="single-item">
+                        <a href="#" class="item-btn btn-ghost btn-light"
+                          >Download</a
+                        >
+                      </li>
+                    </ul>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <section
+          class="main-banner-wrap-layout"
+          style="background-image: url('media/banner/banner.jpg')"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-7">
+                <form class="leave-form-box box-bottom-margin">
+                  <div class="row gutters-20">
+                    <div class="col-md-6 form-group">
+                      <input
+                        type="text"
+                        placeholder="Tên của bạn"
+                        class="form-control"
+                        name="Phone"
+                        id="leave-name"
+                        data-error="Phone field is required"
+                        required
+                      />
+                      <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="col-md-6 form-group">
+                      <input
+                        type="number"
+                        placeholder="Số điện thoại"
+                        class="form-control"
+                        name="email"
+                        id="leave-email"
+                        data-error="E-mail field is required"
+                        required
+                      />
+                      <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="col-12 form-group">
+                      <input
+                        type="text"
+                        placeholder="Điểm đi"
+                        class="form-control"
+                        name="website"
+                        id="leave-website"
+                        data-error="Website field is required"
+                        required
+                      />
+                      <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="col-12 form-group">
+                      <input
+                        type="text"
+                        placeholder="Điểm đến"
+                        class="form-control"
+                        name="website"
+                        id="leave-website"
+                        data-error="Website field is required"
+                        required
+                      />
+                      <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="col-lg-6 form-group">
+                      <select class="custom-select">
+                        <option selected>Xe 4 chỗ</option>
+                        <option value="1">Xe 5 chỗ</option>
+                        <option value="2">Xe 7 chỗ</option>
+                        <option value="3">Xe 16 chỗ</option>
+                        <option value="3">Xe 29 chỗ</option>
+                        <option value="3">Xe 45 chỗ</option>
+                        <option value="3">Bán tải</option>
+                      </select>
+                    </div>
+                    <div class="col-lg-6 d-flex align-items-center pb-3">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="defaultCheck1"
+                        />
+                        <label class="form-check-label" for="defaultCheck1">
+                          2 chiều
+                        </label>
+                      </div>
+                      <div class="form-check ml-5 pl-0">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="defaultCheck2"
+                        />
+                        <label class="form-check-label" for="defaultCheck2">
+                          VAT
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-6 form-group">
+                      <label for=""> Ngày đi </label>
+                      <input
+                        type="date"
+                        placeholder="Ngày đi"
+                        class="form-control"
+                        name="email"
+                        id="leave-email"
+                        data-error="E-mail field is required"
+                        required
+                      />
+                      <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="col-md-6 form-group">
+                      <label for=""> Ngày về </label>
+                      <input
+                        type="date"
+                        placeholder="Ngày về"
+                        class="form-control"
+                        name="email"
+                        id="leave-email"
+                        data-error="E-mail field is required"
+                        required
+                      />
+                      <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="col-12 form-group mb-0">
+                      <button class="btn-fill btn-gradient">Đặt xe ngay</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="col-lg-5">
+                <div class="main-banner-box-layout">
+                  <div class="opactity-animation">
+                    <h1 class="item-main-title">
+                      Xe đưa đón sân bay - Xe hợp đồng Hà Nội
+                    </h1>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                    voluptatibus sapiente magnam necessitatibus illum cum neque,
+                    voluptate quam eius odio dolores impedit fuga sint similique
+                    aliquid debitis rerum asperiores tenetur.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="dependencies/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

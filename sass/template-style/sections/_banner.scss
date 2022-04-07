@@ -1,0 +1,27 @@
+.main-banner-wrap-layout {
+    padding: rem(130px 0 106px);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+    // z-index: 0;
+    .item-main-title {
+        color: $color_light;
+        font-size: rem(50px);
+        line-height: rem(65px);
+        font-weight: 600;
+        margin-bottom: 25px;
+    }
+    p {
+        color: $color_light;
+        width: 100%;
+        min-width: rem(450px);
+        font-size: rem(22px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.leave-form-box {
+    padding: rem(50px);
+    background-color: rgba(#e7f1ff, 1);
+}

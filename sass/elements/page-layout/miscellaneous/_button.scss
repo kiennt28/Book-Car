@@ -1,0 +1,16 @@
+.btn-fill {
+	font-weight: 500;
+	font-size: rem(16px);
+	position: relative;
+	z-index: 2;
+	padding: rem(10px 27px);
+	border-radius: rem(4px);
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background-color: $color_primary;
+	border: rem(2px) solid;
+	border-color: $color_primary;
+	color: $color_light;
+	transition: all 0.5s ease-in-out;
+}

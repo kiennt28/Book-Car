@@ -1,0 +1,29 @@
+a,
+a:active,
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: 0 none;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: rem(10px 12px);
+    outline: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
