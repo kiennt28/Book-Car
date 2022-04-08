@@ -395,4 +395,8 @@ ul {
   background-color: #e7f1ff;
 }
 
+.service-box-layout ul.content-holder {
+  padding: 30px 30px 0;
+}
+
 /*# sourceMappingURL=app.css.map */
