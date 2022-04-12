@@ -13,4 +13,43 @@
 	border-color: $color_primary;
 	color: $color_light;
 	transition: all 0.5s ease-in-out;
+	&:hover {
+		color: $color_primary;
+		background-color: transparent;
+		i {
+			color: $color_primary;
+			transform: translateX(rem(5px));
+		}
+	}
+}
+.btn-text {
+	font-weight: 500;
+	font-size: rem(16px);
+	display: inline-flex;
+	align-items: center;
+	color: $color_primary;
+	transition: all 0.5s ease-in-out;
+	i {
+		margin-top: rem(1px);
+		margin-left: rem(10px);
+		line-height: 1;
+		transform: translateX(rem(0px));
+		color: $color_primary;
+		transition: all 0.5s ease-in-out;
+		&:before {
+			font-size: rem(18px);
+			transition: all 0.5s ease-in-out;
+		}
+	}
+	&:hover {
+		color: #ff3e00;
+		i {
+			transform: translateX(rem(5px));
+			color: #ff3e00;
+		}
+	}
+	&:focus {
+		outline: none;
+		box-shadow: none;
+	}
 }

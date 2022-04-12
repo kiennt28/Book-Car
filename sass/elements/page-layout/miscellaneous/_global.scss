@@ -27,3 +27,28 @@ ul {
     margin: 0;
     padding: 0;
 }
+
+.compress-left-side {
+	padding-right: rem(50px);
+	padding-left: rem(calc(calc(100% - 1170px)/2));
+
+	@media only screen and (max-width: 1199px) {
+		padding-right: rem(calc(calc(100% - 930px)/2));
+		padding-left: rem(calc(calc(100% - 930px)/2));
+	}
+
+	@media only screen and (max-width: 991px) {
+		padding-right: rem(calc(calc(100% - 690px)/2));
+		padding-left: rem(calc(calc(100% - 690px)/2));
+	}
+
+	@media only screen and (max-width: 767px) {
+		padding-right: rem(calc(calc(100% - 510px)/2));
+		padding-left: rem(calc(calc(100% - 510px)/2));
+	}
+
+	@media only screen and (max-width: 575px) {
+		padding-right: rem(15px);
+		padding-left: rem(15px);
+	}
+}

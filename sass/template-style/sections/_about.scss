@@ -1,0 +1,31 @@
+.about-wrap-layout {
+    background-color: $color-accent;
+}
+.about-box-layout {
+    margin-bottom: rem(30px);
+    .figure-holder {
+        @media only screen and (max-width: 991px) {
+			text-align: center;
+			padding: rem(0 30px);
+		}
+    }
+    .content-holder {
+        .section-title {
+            color: $color_primary;
+            font-size: rem(18px);
+            margin-bottom: rem(10px);
+            font-weight: 500;
+        }
+        .item-title {
+            font-weight: 600;
+            margin-bottom: rem(30px);
+        }
+        p {
+            margin-bottom: rem(25px);
+        }
+        .btn-fill {
+            margin-top: rem(20px);
+            padding: rem(10px 41px);
+        }
+    }
+}
